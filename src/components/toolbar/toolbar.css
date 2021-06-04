@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+.toolbarContainer {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 0px 20px;
+  border-bottom: 1px solid black;
+  color: #fff;
+  background-color: #045db6;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.toolbarBrand {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+}
+.toolbarBrandName {
+  display: flex;
+  font-size: 30px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  /* font-weight: bold; */
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Lobster', cursive;
+}
+
+.toolbarBrandLogo {
+  display: flex;
+  /* margin-right: 10px; */
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid black; */
+  justify-content: center;
+  align-items: center;
+}
+
+.toolbarIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.toolbarIconWrapper {
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  align-content: center;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  margin-right: 20px;
+}
+
+.toolbarIconWrapper:hover {
+  background-color: darkblue;
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+}
+
+.toolbarIconContainer {
+  position: relative;
+  /* margin-right: 20px; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  object-fit: cover;
+}
+
+.toobarIconBadge {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  object-fit: cover;
+}
+
+.toolbarAvatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toolbarAvatarImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid green;
+  object-fit: cover;
+}
+
+.toolbarAvatarImg:hover {
+  border: 1px solid darkgoldenrod;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+  .toolbarContainer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+  }
+  .toolbarIcons {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
