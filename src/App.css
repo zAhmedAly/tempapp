@@ -14,8 +14,12 @@
 }
 
 body {
+<<<<<<< HEAD
   /* font-family: 'Raleway', sans-serif; */
   font-family: 'Roboto Condensed', sans-serif;
+=======
+  font-family: "Raleway", sans-serif;
+>>>>>>> 9c5ab8a337adcbcd945f9225c4f19e8551171453
   font-size: 1rem;
   line-height: 1.6;
   background-color: var(--light-color);
@@ -85,7 +89,7 @@ ul {
 /* Landing Page */
 .main {
   position: relative;
-  background: url('./img/showcase.jpg') no-repeat center center/cover;
+  background: url("./img/showcase.jpg") no-repeat center center/cover;
   height: 100vh;
 }
 
@@ -183,5 +187,9 @@ ul {
 
   .header h1 {
     margin-bottom: 1rem;
+  }
+
+  .main-inner {
+    width: 100%;
   }
 }
