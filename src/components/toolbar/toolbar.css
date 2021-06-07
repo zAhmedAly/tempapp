@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 .toolbarContainer {
   display: flex;
@@ -28,7 +28,7 @@
   align-items: center;
   /* font-weight: bold; */
   /* font-family: 'Roboto Condensed', sans-serif; */
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
 }
 
 .toolbarBrandLogo {
@@ -124,15 +124,15 @@
 }
 
 .toolbarAvatarImg {
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  border: 2px solid green;
+  border: 1px solid green;
   object-fit: cover;
 }
 
 .toolbarAvatarImg:hover {
-  border: 2px solid darkblue;
+  border: 1px solid darkblue;
 }
 
 /* Mobile Styles */
