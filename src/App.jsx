@@ -1,18 +1,23 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import './App.css';
-import Footer from './components/layout/Footer';
-import Header from './components/layout/Header';
-import Main from './components/layout/Main';
-import Toolbar from './components/toolbar/Toolbar';
+import "./App.css";
+import Home from "./components/screens/home/Home";
+import Sidebar from "./components/sidebar/Sidebar";
+import Toolbar from "./components/toolbar/Toolbar";
 
 function App() {
   return (
     <Router>
       <Toolbar />
-      {/* <Header />
-      <Main />
-      <Footer /> */}
+      <div className="container">
+        <Sidebar />
+        {/* <Home /> */}
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }

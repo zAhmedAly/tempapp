@@ -31,7 +31,7 @@ ul {
 }
 
 /* Utilities */
-.container {
+/* .container {
   max-width: 1100px;
   margin: auto;
   overflow: hidden;
@@ -39,6 +39,16 @@ ul {
   margin-top: 6rem;
   margin-bottom: 3rem;
   border: 2px solid black;
+} */
+
+.container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Text Styles*/
@@ -149,7 +159,7 @@ ul {
 /* Mobile Styles */
 @media (max-width: 700px) {
   .container {
-    margin-top: 8rem;
+    margin-top: 20px;
   }
 
   .hide-sm {
