@@ -17,7 +17,7 @@ const Toolbar = () => {
           <div className="toolbarIconContainer">
             <i className="fas fa-users fa-lg center"></i>
           </div>
-          <span class="tooltiptext">Developers</span>
+          <span class="tooltiptext">Friends</span>
         </div>
         <div className="toolbarIconWrapper">
           <div className="toolbarIconContainer">
