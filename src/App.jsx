@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
-import Home from "./components/screens/home/Home";
+import Home from "./screens/home/Home";
 import Sidebar from "./components/sidebar/Sidebar";
 import Toolbar from "./components/toolbar/Toolbar";
 
