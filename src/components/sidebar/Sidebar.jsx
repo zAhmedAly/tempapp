@@ -10,12 +10,12 @@ const Sidebar = () => {
           <ul className="sidebarList">
             <Link to="/" className="link">
               <li className="sidebarListItem active">
-                <i class="fas fa-home sidebarIcon"></i>
+                <i className="fas fa-home sidebarIcon"></i>
                 Home
               </li>
             </Link>
             <li className="sidebarListItem">
-              {/* <i class="fas fa-rss-square sidebarIcon"></i> */}
+              {/* <i className="fas fa-rss-square sidebarIcon"></i> */}
               <div className="sidebarAvatar">
                 <img
                   src="https://media.vanityfair.com/photos/5ec1656e5af441fe3976daf4/master/pass/barack-obama.jpg"
@@ -27,22 +27,22 @@ const Sidebar = () => {
             </li>
             <Link to="/users" className="link">
               <li className="sidebarListItem">
-                <i class="fas fa-users sidebarIcon"></i>
+                <i className="fas fa-users sidebarIcon"></i>
                 Freinds
               </li>
             </Link>
 
             <li className="sidebarListItem">
-              <i class="fas fa-bell sidebarIcon"></i>
+              <i className="fas fa-bell sidebarIcon"></i>
               Notifications
             </li>
             <li className="sidebarListItem">
-              <i class="fas fa-comment sidebarIcon"></i>
+              <i className="fas fa-comment sidebarIcon"></i>
               Messages
             </li>
             <Link to="/products" className="link">
               <li className="sidebarListItem">
-                <i class="fas fa-cog sidebarIcon"></i>
+                <i className="fas fa-cog sidebarIcon"></i>
                 Settings
               </li>
             </Link>

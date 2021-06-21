@@ -98,17 +98,17 @@
   align-items: center;
   cursor: pointer;
   border-radius: 50%;
-  border: 1px solid white;
+  /* border: 1px solid white;
   width: 30px;
-  height: 30px;
+  height: 30px; */
   margin-right: 5px;
 }
 
 .sidebarAvatarImg {
-  width: 28px;
-  height: 28px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  border: 1px solid green;
+  border: 2px solid green;
   object-fit: cover;
 }
 

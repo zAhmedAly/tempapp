@@ -5,6 +5,26 @@
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
 }
 
+.fa-tag {
+  color: blue;
+}
+
+.fa-grin {
+  color: goldenrod;
+}
+
+.fa-images {
+  color: tomato;
+}
+
+.fa-map-marker-alt {
+  color: lightseagreen;
+}
+
+.fa-window-close {
+  background-color: black;
+  color: white;
+}
 .shareWrapper {
   padding: 10px;
 }
@@ -12,6 +32,7 @@
 .shareTop {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .shareProfileImg {
