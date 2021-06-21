@@ -17,34 +17,34 @@ const Toolbar = () => {
           <div className="toolbarIconContainer">
             <i className="fas fa-users fa-lg center"></i>
           </div>
-          <span class="tooltiptext">Friends</span>
+          <span className="tooltiptext">Friends</span>
         </div>
         <div className="toolbarIconWrapper">
           <div className="toolbarIconContainer">
             <i className="fas fa-edit fa-lg center"></i>
           </div>
-          <span class="tooltiptext">Add Post</span>
+          <span className="tooltiptext">Add Post</span>
         </div>
         <div className="toolbarIconWrapper">
           <div className="toolbarIconContainer">
             <i className="fas fa-bell fa-lg center"></i>
             <span className="toobarIconBadge">2</span>
           </div>
-          <span class="tooltiptext">Notifications</span>
+          <span className="tooltiptext">Notifications</span>
         </div>
         <div className="toolbarIconWrapper">
           <div className="toolbarIconContainer">
             <i className="fas fa-comment fa-lg center"></i>
             <span className="toobarIconBadge">10</span>
           </div>
-          <span class="tooltiptext">Messages</span>
+          <span className="tooltiptext">Messages</span>
         </div>
 
         <div className="toolbarIconWrapper">
           <div className="toolbarIconContainer">
             <i className="fas fa-cog fa-lg center"></i>
           </div>
-          <span class="tooltiptext">Settings</span>
+          <span className="tooltiptext">Settings</span>
         </div>
 
         {/* </div> */}
