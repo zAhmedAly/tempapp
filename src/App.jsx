@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import Home from "./screens/home/Home";
-import Sidebar from "./components/sidebar/Sidebar";
+// import Sidebar from "./components/sidebar/Sidebar";
 import Toolbar from "./components/toolbar/Toolbar";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Toolbar />
       <div className="container">
-        <Sidebar />
+        {/* <Sidebar /> */}
         {/* <Home /> */}
         <Switch>
           <Route exact path="/">

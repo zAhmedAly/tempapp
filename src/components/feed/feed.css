@@ -1,7 +1,11 @@
 .feed {
-  flex: 5.5;
+  flex: 6;
+  overflow-y: scroll;
+  position: sticky;
 }
 
 .feedWrapper {
   padding: 20px;
+  margin: auto;
+  width: 80%;
 }

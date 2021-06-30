@@ -117,6 +117,138 @@ const Sidebar = () => {
               </div>
               <span className="sidebarUsername">Sara Smith</span>
             </li>
+            <li className="sidebarFriend">
+              <div className="sidebarProfileImgContainer">
+                <img
+                  className="sidebarProfileImg"
+                  src="https://www.pngfind.com/pngs/m/149-1497143_free-png-download-happy-person-png-images-background.png"
+                  alt=""
+                />
+                <span className="sidebarOnline"></span>
+              </div>
+              <span className="sidebarUsername">Ahmed Aly</span>
+            </li>
+            <li className="sidebarFriend">
+              <div className="sidebarProfileImgContainer">
+                <img
+                  className="sidebarProfileImg"
+                  src="https://thumbs.dreamstime.com/b/smart-person-eyewear-man-official-clothes-stands-against-white-background-studio-165962936.jpg"
+                  alt=""
+                />
+                <span className="sidebarOnline"></span>
+              </div>
+              <span className="sidebarUsername">John Adams</span>
+            </li>
+            <li className="sidebarFriend">
+              <div className="sidebarProfileImgContainer">
+                <img
+                  className="sidebarProfileImg"
+                  src="https://thumbs.dreamstime.com/b/close-up-portrait-rejoicing-surprised-asian-woman-glasses-happy-person-hear-great-awesome-news-realise-something-close-178164807.jpg"
+                  alt=""
+                />
+                <span className="sidebarOnline"></span>
+              </div>
+              <span className="sidebarUsername">Sara Smith</span>
+            </li>
+            <li className="sidebarFriend">
+              <div className="sidebarProfileImgContainer">
+                <img
+                  className="sidebarProfileImg"
+                  src="https://www.pngfind.com/pngs/m/149-1497143_free-png-download-happy-person-png-images-background.png"
+                  alt=""
+                />
+                <span className="sidebarOnline"></span>
+              </div>
+              <span className="sidebarUsername">Ahmed Aly</span>
+            </li>
+            <li className="sidebarFriend">
+              <div className="sidebarProfileImgContainer">
+                <img
+                  className="sidebarProfileImg"
+                  src="https://thumbs.dreamstime.com/b/smart-person-eyewear-man-official-clothes-stands-against-white-background-studio-165962936.jpg"
+                  alt=""
+                />
+                <span className="sidebarOnline"></span>
+              </div>
+              <span className="sidebarUsername">John Adams</span>
+            </li>
+            <li className="sidebarFriend">
+              <div className="sidebarProfileImgContainer">
+                <img
+                  className="sidebarProfileImg"
+                  src="https://thumbs.dreamstime.com/b/close-up-portrait-rejoicing-surprised-asian-woman-glasses-happy-person-hear-great-awesome-news-realise-something-close-178164807.jpg"
+                  alt=""
+                />
+                <span className="sidebarOnline"></span>
+              </div>
+              <span className="sidebarUsername">Sara Smith</span>
+            </li>
+            <li className="sidebarFriend">
+              <div className="sidebarProfileImgContainer">
+                <img
+                  className="sidebarProfileImg"
+                  src="https://www.pngfind.com/pngs/m/149-1497143_free-png-download-happy-person-png-images-background.png"
+                  alt=""
+                />
+                <span className="sidebarOnline"></span>
+              </div>
+              <span className="sidebarUsername">Ahmed Aly</span>
+            </li>
+            <li className="sidebarFriend">
+              <div className="sidebarProfileImgContainer">
+                <img
+                  className="sidebarProfileImg"
+                  src="https://thumbs.dreamstime.com/b/smart-person-eyewear-man-official-clothes-stands-against-white-background-studio-165962936.jpg"
+                  alt=""
+                />
+                <span className="sidebarOnline"></span>
+              </div>
+              <span className="sidebarUsername">John Adams</span>
+            </li>
+            <li className="sidebarFriend">
+              <div className="sidebarProfileImgContainer">
+                <img
+                  className="sidebarProfileImg"
+                  src="https://thumbs.dreamstime.com/b/close-up-portrait-rejoicing-surprised-asian-woman-glasses-happy-person-hear-great-awesome-news-realise-something-close-178164807.jpg"
+                  alt=""
+                />
+                <span className="sidebarOnline"></span>
+              </div>
+              <span className="sidebarUsername">Sara Smith</span>
+            </li>
+            <li className="sidebarFriend">
+              <div className="sidebarProfileImgContainer">
+                <img
+                  className="sidebarProfileImg"
+                  src="https://www.pngfind.com/pngs/m/149-1497143_free-png-download-happy-person-png-images-background.png"
+                  alt=""
+                />
+                <span className="sidebarOnline"></span>
+              </div>
+              <span className="sidebarUsername">Ahmed Aly</span>
+            </li>
+            <li className="sidebarFriend">
+              <div className="sidebarProfileImgContainer">
+                <img
+                  className="sidebarProfileImg"
+                  src="https://thumbs.dreamstime.com/b/smart-person-eyewear-man-official-clothes-stands-against-white-background-studio-165962936.jpg"
+                  alt=""
+                />
+                <span className="sidebarOnline"></span>
+              </div>
+              <span className="sidebarUsername">John Adams</span>
+            </li>
+            <li className="sidebarFriend">
+              <div className="sidebarProfileImgContainer">
+                <img
+                  className="sidebarProfileImg"
+                  src="https://thumbs.dreamstime.com/b/close-up-portrait-rejoicing-surprised-asian-woman-glasses-happy-person-hear-great-awesome-news-realise-something-close-178164807.jpg"
+                  alt=""
+                />
+                <span className="sidebarOnline"></span>
+              </div>
+              <span className="sidebarUsername">Sara Smith</span>
+            </li>
           </ul>
         </div>
       </div>

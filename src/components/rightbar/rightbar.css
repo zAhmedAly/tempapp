@@ -1,5 +1,7 @@
 .rightbar {
-  flex: 3.5;
+  flex: 3;
+  overflow-y: scroll;
+  position: sticky;
 }
 
 .rightbarWrapper {
@@ -99,4 +101,11 @@
 
 .rightbarFollowButton:focus {
   outline: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .rightbar {
+    display: none;
+  }
 }
