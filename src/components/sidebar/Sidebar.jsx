@@ -9,22 +9,24 @@ const Sidebar = () => {
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
             <Link to="/" className="link">
-              <li className="sidebarListItem active">
+              <li className="sidebarListItem">
                 <i className="fas fa-home sidebarIcon"></i>
                 Home
               </li>
             </Link>
-            <li className="sidebarListItem">
-              {/* <i className="fas fa-rss-square sidebarIcon"></i> */}
-              <div className="sidebarAvatar">
-                <img
-                  src="https://media.vanityfair.com/photos/5ec1656e5af441fe3976daf4/master/pass/barack-obama.jpg"
-                  alt=""
-                  className="sidebarAvatarImg"
-                />
-              </div>
-              Barak Obama
-            </li>
+            <Link to="/profile">
+              <li className="sidebarListItem">
+                {/* <i className="fas fa-rss-square sidebarIcon"></i> */}
+                <div className="sidebarAvatar">
+                  <img
+                    src="https://media.vanityfair.com/photos/5ec1656e5af441fe3976daf4/master/pass/barack-obama.jpg"
+                    alt=""
+                    className="sidebarAvatarImg"
+                  />
+                </div>
+                Barak Obama
+              </li>
+            </Link>
             <Link to="/users" className="link">
               <li className="sidebarListItem">
                 <i className="fas fa-users sidebarIcon"></i>
@@ -51,17 +53,19 @@ const Sidebar = () => {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Online Friends</h3>
           <ul className="sidebarList">
-            <li className="sidebarFriend">
-              <div className="sidebarProfileImgContainer">
-                <img
-                  className="sidebarProfileImg"
-                  src="https://www.pngfind.com/pngs/m/149-1497143_free-png-download-happy-person-png-images-background.png"
-                  alt=""
-                />
-                <span className="sidebarOnline"></span>
-              </div>
-              <span className="sidebarUsername">Ahmed Aly</span>
-            </li>
+            <Link to={`/profile`}>
+              <li className="sidebarFriend">
+                <div className="sidebarProfileImgContainer">
+                  <img
+                    className="sidebarProfileImg"
+                    src="https://www.pngfind.com/pngs/m/149-1497143_free-png-download-happy-person-png-images-background.png"
+                    alt=""
+                  />
+                  <span className="sidebarOnline"></span>
+                </div>
+                <span className="sidebarUsername">Ahmed Aly</span>
+              </li>
+            </Link>
             <li className="sidebarFriend">
               <div className="sidebarProfileImgContainer">
                 <img

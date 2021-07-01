@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./toolbar.css";
 
 const Toolbar = () => {
@@ -13,6 +14,15 @@ const Toolbar = () => {
       </span>
       <div className="toolbarIcons">
         {/* <div className='toolbarIconsWrapper'> */}
+        <div className="toolbarIconWrapper">
+          <div className="toolbarIconContainer">
+            <Link to="/">
+              <i className="fas fa-home fa-lg center"></i>
+            </Link>
+          </div>
+          <span className="tooltiptext">Home</span>
+        </div>
+
         <div className="toolbarIconWrapper">
           <div className="toolbarIconContainer">
             <i className="fas fa-users fa-lg center"></i>
@@ -48,13 +58,15 @@ const Toolbar = () => {
         </div>
 
         {/* </div> */}
-        <div className="toolbarAvatar">
-          <img
-            src="https://media.vanityfair.com/photos/5ec1656e5af441fe3976daf4/master/pass/barack-obama.jpg"
-            alt=""
-            className="toolbarAvatarImg"
-          />
-        </div>
+        <Link to="/profile">
+          <div className="toolbarAvatar">
+            <img
+              src="https://media.vanityfair.com/photos/5ec1656e5af441fe3976daf4/master/pass/barack-obama.jpg"
+              alt=""
+              className="toolbarAvatarImg"
+            />
+          </div>
+        </Link>
       </div>
     </header>
   );

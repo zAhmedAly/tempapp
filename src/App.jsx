@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./screens/home/Home";
 // import Sidebar from "./components/sidebar/Sidebar";
 import Toolbar from "./components/toolbar/Toolbar";
+import Profile from "./screens/profile/Profile";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/profile">
+            <Profile />
           </Route>
         </Switch>
       </div>

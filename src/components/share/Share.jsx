@@ -40,7 +40,7 @@ const Share = () => {
           <div className="shareImgContainer">
             <img className="shareImg" src={URL.createObjectURL(file)} alt="" />
             <i
-              class="far fa-window-close fa-2x shareCancelImg"
+              className="far fa-window-close fa-2x shareCancelImg"
               onClick={() => setFile(null)}
             ></i>
             {/* <Cancel className="shareCancelImg" onClick={() => setFile(null)} /> */}
