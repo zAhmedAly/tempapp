@@ -1,7 +1,71 @@
-import React from "react";
+import "./profile.css";
+import Sidebar from "../../components/sidebar/Sidebar";
+import Feed from "../../components/feed/Feed";
+import Rightbar from "../../components/rightbar/Rightbar";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router";
+import { Users } from "../../dummyData";
 
 const Profile = () => {
-  return <div>Profile</div>;
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const [user, setUser] = useState(Users.find((u) => u.id === 1));
+  const username = useParams().username;
+
+  console.log("PROFILE username = ", username);
+  console.log("PROFILE USER = ", user);
+
+  console.log("USER PROFILE = ", Users[0]);
+  useEffect(() => {
+    const fetchUser = async () => {
+      // const res = await axios.get(`/users?username=${username}`);
+      // setUser(res.data);
+      // console.log("PROFILE USER = ", res.data);
+      setUser(Users[0]);
+      console.log("PROFILE USER = ", user);
+    };
+    fetchUser();
+  }, [username]);
+
+  return (
+    <>
+      <div className="profile">
+        <Sidebar />
+        <div className="profileRight">
+          <div className="profileRightTop">
+            <div className="profileCover">
+              <img
+                className="profileCoverImg"
+                src={
+                  user.coverPicture
+                    ? "assets/" + user.coverPicture
+                    : "assets/" + "person/noCover.png"
+                }
+                alt=""
+              />
+              <img
+                className="profileUserImg"
+                src={
+                  user.profilePicture
+                    ? "assets/" + user.profilePicture
+                    : "assets/person/noAvatar.png"
+                }
+                alt=""
+              />
+            </div>
+            <div className="profileInfo">
+              <h4 className="profileInfoName">{user.username}</h4>
+              <span className="profileInfoDesc">{user.desc}</span>
+            </div>
+          </div>
+          <div className="profileRightBottom">
+            <Feed username={username} />
+            <Rightbar key={user.id} user={user} />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Profile;

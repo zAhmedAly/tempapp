@@ -5,19 +5,34 @@ import { Link } from "react-router-dom";
 import { Users } from "../../dummyData";
 import Online from "../online/Online";
 
-const Rightbar = () => {
-  const [user, setUser] = useState(null);
+const Rightbar = ({ user }) => {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
+  console.log("RIGHTBAR USER = ", user);
+  const [currentUser, setCurrentUser] = useState(Users.find((u) => u.id === 2));
+
+  console.log("RIGHTBAR currentUser = ", currentUser);
+
+  const [followed, setFollowed] = useState(
+    user?.followings.includes(user?._id)
+  );
+
+  // const [user, setUser] = useState(null);
 
   //   useEffect(() => {
   //     const userInfo = Users.find((u) => u.id === 1);
   //     setUser(userInfo);
   //   }, []);
 
+  const handleClick = (e) => {
+    e.preventDefault();
+  };
+
   const HomeRightbar = () => {
     return (
       <>
         <div className="birthdayContainer">
-          <img className="birthdayImg" src="assets/gift.png" alt="" />
+          <img className="birthdayImg" src={PF + "gift.png"} alt="" />
           <span className="birthdayText">
             <b>Pola Foster</b> and <b>3 other friends</b> have a birhday today.
           </span>
@@ -36,10 +51,14 @@ const Rightbar = () => {
   const ProfileRightbar = () => {
     return (
       <>
-        {/* {user.username !== currentUser.username && (
+        {user.username !== currentUser.username && (
           <button className="rightbarFollowButton" onClick={handleClick}>
-            {followed ? "Unfollow" : "Follow"}
-            {followed ? <Remove /> : <Add />}
+            {followed ? "Unfollow " : "Follow "}{" "}
+            {followed ? (
+              <i class="fas fa-minus"></i>
+            ) : (
+              <i class="fas fa-plus"></i>
+            )}
           </button>
         )}
         <h4 className="rightbarTitle">User information</h4>
@@ -57,7 +76,7 @@ const Rightbar = () => {
             <span className="rightbarInfoValue">
               {user.relationship === 1
                 ? "Single"
-                : user.relationship === 1
+                : user.relationship === 2
                 ? "Married"
                 : "-"}
             </span>
@@ -65,7 +84,7 @@ const Rightbar = () => {
         </div>
         <h4 className="rightbarTitle">User friends</h4>
         <div className="rightbarFollowings">
-          {friends.map((friend) => (
+          {Users.map((friend) => (
             <Link
               to={"/profile/" + friend.username}
               style={{ textDecoration: "none" }}
@@ -74,8 +93,8 @@ const Rightbar = () => {
                 <img
                   src={
                     friend.profilePicture
-                      ? PF + friend.profilePicture
-                      : PF + "person/noAvatar.png"
+                      ? "assets/" + user.profilePicture
+                      : "assets/person/noAvatar.png"
                   }
                   alt=""
                   className="rightbarFollowingImg"
@@ -84,7 +103,7 @@ const Rightbar = () => {
               </div>
             </Link>
           ))}
-        </div> */}
+        </div>
       </>
     );
   };

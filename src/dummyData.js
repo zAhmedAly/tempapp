@@ -3,6 +3,11 @@ export const Users = [
     id: 1,
     profilePicture: "person/1.jpeg",
     username: "Safak Kocaoglu",
+    coverPicture: "person/noCover.png",
+    followings: [2, 3, 4],
+    city: "Santa Clarita",
+    from: "Cairo, Egypt",
+    relationship: 2,
   },
   {
     id: 2,
